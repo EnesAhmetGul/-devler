@@ -43,6 +43,10 @@ int Bul(int a){
 		}
 		else{}
 	}
+	if(top==-1){
+		printf("Liste BOS!\n");
+		k=1;
+	}
 	if(k==0){
 		printf("Bulunamadi!\n");
 	}
