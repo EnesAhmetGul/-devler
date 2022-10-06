@@ -25,7 +25,7 @@ void Push(int veri){
 }
 
 void Pop(){
-		struct Node* gecici=ilk; //listenin baþýndan baþla
+		struct Node* gecici=ilk; //listenin baÅŸÄ±ndan baÅŸla
 		while(gecici->sonraki!=NULL){ //son elemana kadar ilerle		
 			gecici=gecici->sonraki;
 		}
@@ -33,20 +33,24 @@ void Pop(){
 }
 
 struct Node* Bul(int aranan){
-	
+	int k;
 	if(ilk==NULL){
-		printf("Liste BOS!");
+		k=1;
+		printf("Liste BOS!\n");
 	}
 	else{
 		struct Node* gecici=ilk;		
 		while(gecici!=NULL){
 			if(gecici->data==aranan){
-				printf("Bulundu!");
+				printf("Bulundu!\n");
+				k=1;
 			}			
 			gecici=gecici->sonraki;
 		}
 	}
-	printf("Bulunamadi!");
+	if(k==0){
+		printf("BulunamadÄ±!\n");
+	}
 }
 
 main(){
