@@ -47,9 +47,9 @@ struct Node* Bul(int aranan){
 			}			
 			gecici=gecici->sonraki;
 		}
-	}
-	if(k==0){
-		printf("Bulunamadı!\n");
+		if(gecici==NULL){
+			printf("Bulunamadı!\n");
+		}
 	}
 }
 
