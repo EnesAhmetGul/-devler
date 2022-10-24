@@ -2,11 +2,11 @@ import math
 
 
 def f(x):
-    return (math.pow(x, 1/3))
+    return (pow(x, 1/3))
 
 
 def g(x):
-    return 1/3 * (math.pow(x, -2/3))
+    return 1/3 * (pow(x, -2/3))
 
 
 def newtonRaphson(x0, e, N):
