@@ -20,7 +20,7 @@ def newtonRaphson(x0, e, N):
             break
 
         x1 = x0 - f(x0) / g(x0)
-        print('Iterasyon-%d, x1 = %0.6f, f(x1) = %0.6f and g(x1) = %0.6f' % (step, x1, f(x1), g(x1)))
+        #print('Iterasyon-%d, x1 = %0.6f, f(x1) = %0.6f and g(x1) = %0.6f' % (step, x1, f(x1), g(x1)))
         x0 = x1
         step = step + 1
 
