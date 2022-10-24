@@ -35,12 +35,8 @@ def newtonRaphson(x0, e, N):
     else:
         print('\nKök bulunamadı.')
 
-def main():
-     x0 = float(input('Başlangic Degeri: '))
-     e = float(input('Mutlak Hata: '))
-     N = int(input('Maximum Adim: '))
+x0 = float(input('Başlangıç Değeri: '))
+e = float(input('Mutlak Hata: '))
+N = int(input('Maximum Adım: '))
 
-
-     newtonRaphson(x0, e, N)
-
-main()
+newtonRaphson(x0, e, N)
